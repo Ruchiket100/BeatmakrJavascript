@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+i {
+    pointer-events: none;
+}
+
+
+header {
+    text-align: center;
+    color: rgb(60, 60, 60);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+.pad {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+}
+
+.kick-pad {
+    background: rgb(117, 189, 146);
+}
+
+.snare-pad {
+    background: rgb(161, 117, 189);
+}
+
+.hihat-pad {
+    background: rgb(189, 139, 117);
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.kick,
+.snare,
+.hihat {
+    display: flex;
+}
+
+
+.sequencer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: ceter;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.controls button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: rgb(120, 119, 119);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.pad {
+    transition: all 0.5s ease;
+}
+
+.kick-pad.active {
+    background: rgb(51, 204, 112);
+}
+
+.snare-pad.active {
+    background: rgb(137, 53, 190);
+}
+
+.hihat-pad.active {
+    background: rgb(196, 102, 61);
+}
+
+.play {
+    padding: 1rem 2rem;
+    font-size: 2.4 rem;
+    border: 2px solid rgb(8, 76, 99);
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+
+.play:hover {
+    color: rgb(202, 226, 43);
+    background: rgb(8, 76, 99);
+}
+
+select {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
