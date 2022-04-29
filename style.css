@@ -13,7 +13,8 @@ body {
     font-weight: 300;
 }
 
-i {
+i,
+svg {
     pointer-events: none;
 }
 
@@ -94,15 +95,15 @@ header h1 {
 }
 
 .kick-pad.active {
-    background: rgb(51, 204, 112);
+    background: rgb(13, 255, 110);
 }
 
 .snare-pad.active {
-    background: rgb(137, 53, 190);
+    background: rgb(158, 20, 243);
 }
 
 .hihat-pad.active {
-    background: rgb(196, 102, 61);
+    background: rgb(248, 93, 27);
 }
 
 .play {
@@ -118,7 +119,26 @@ header h1 {
     background: rgb(8, 76, 99);
 }
 
+.tempo {
+    margin-top: 2rem;
+}
+
 select {
     padding: 1rem;
     font-size: 1.6rem;
+}
+
+.mute.active {
+    background-color: rgb(18, 17, 17);
+    color: white;
+}
+
+@keyframes AnimateActive {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
 }
